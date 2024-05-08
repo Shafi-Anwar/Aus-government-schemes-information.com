@@ -14,7 +14,7 @@ function page() {
   width={154.09}
   height={150}
   />
-   <h2 className='md:hidden text-center p-3 text-white font-roboto text-3xl font-bold  mt-[45px]  ml-[35px]'>About Us</h2>
+   <h2 className='md:hidden text-center p-3 text-white font-roboto text-3xl font-bold  mt-[45px]  ml-[35px]'>About Us </h2>
 </div>
 <div className='bg-green-700 w-full h-6'></div>
 
