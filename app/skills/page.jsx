@@ -1,3 +1,4 @@
+
 import { CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card"
 import Image from "next/image";
 import Link from "next/link";
@@ -292,6 +293,7 @@ Find training and support to help you find a job before or after you finish scho
             </div>
           </div>
         </section>
+
     </div>
   )
 }

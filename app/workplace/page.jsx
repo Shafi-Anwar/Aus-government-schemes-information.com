@@ -1,3 +1,4 @@
+
 import { CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card"
 import Image from "next/image";
 import Link from "next/link";
@@ -282,11 +283,6 @@ function page() {
 
 
             </div>
-
-
-          
-
-         
           </div>
         </section>
 

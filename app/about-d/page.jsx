@@ -22,11 +22,7 @@ function AboutDepartment() {
             <ul className="list-none space-y-1">
               <li><Link href="#info" passHref className="text-base hover:text-white">Information</Link></li>
               <li><Link href="#corporate" className="text-base hover:text-white">Corporate reporting</Link></li>
-              <li><Link href="#" passHref className="text-base hover:text-white">Our priorities</Link></li>
-              <li><Link href="#" passHref className="text-base hover:text-white">Our structure</Link></li>
-              <li><Link href="#" passHref className="text-base hover:text-white">Leadership</Link></li>
-              <li><Link href="#" passHref className="text-base hover:text-white">Locations</Link></li>
-              <li><Link href="#" passHref className="text-base hover:text-white">Contact us</Link></li>
+            
             </ul>
           </nav>
         </div>

@@ -27,17 +27,17 @@ const Header = () => {
         {/* Navigation Menu */}
         <nav className="hidden md:flex space-x-4 w-full">
           <li className='list-none'>
-            <Link href="/" className="text-gray-500 hover:text-sky-300">
+            <Link href="https://consultations.dewr.gov.au/" className="text-gray-500 hover:text-sky-300">
               Consultations
             </Link>
           </li>
           <li className='list-none'>
-            <Link href="/about" className="text-gray-500 hover:text-sky-300">
+            <Link href="https://www.dewr.gov.au/about-department/our-ministers" className="text-gray-500 hover:text-sky-300">
               Ministers
             </Link>
           </li>
           <li className='list-none'>
-            <Link href="/contact" className="text-gray-500 hover:text-sky-300">
+            <Link href="https://www.dewr.gov.au/programs-initiatives" className="text-gray-500 hover:text-sky-300">
               Programs and Initiatives
             </Link>
           </li>
