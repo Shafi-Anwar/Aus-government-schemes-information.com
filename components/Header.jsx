@@ -127,6 +127,8 @@ const Header = () => {
   <Link href="/employment" className="text-black px-4 py-2 mx-2 hover:border-b-4 border-transparent hover:border-[#54a8cd] transition-all duration-300">Employment</Link>
   <Link href="/workplace" className="text-black px-4 py-2 mx-2 hover:border-b-4 border-transparent hover:border-[#d78250] transition-all duration-300">Workplace Relations</Link>
 
+  <Link href="/grant" className="text-black px-4 py-2 mx-2 hover:border-b-4 border-transparent hover:border-[#d78250] transition-all duration-300">Grant Funding</Link>
+
 
 
 
