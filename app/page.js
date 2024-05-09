@@ -21,11 +21,9 @@ function Page() {
 
       <div className="px-4 md:px-0"> {/* Adjust horizontal padding for mobile */}
         <p className="bg-yellow-200 text-black text-lg md:text-xl py-4 md:py-6 text-center">
-          This story was first published on{' '}
-          <span className="font-bold text-gold-900">Friday 27 October 2023</span>. If you wish to use
-          this content, please contact{' '}
-          <span className="text-gold-900 underline">media@dewr.gov.au</span> to confirm that the
-          information is still current.
+          To apply for grant, please click here,
+          <span className="text-gold-900 underline">my.gov.au</span> 
+
         </p>
 
         <h2 className="text-lg md:text-2xl text-gray-800 font-light my-8">
