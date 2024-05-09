@@ -1,263 +1,94 @@
-import { CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card"
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
-function CheckIcon(props) {
+function Page() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <polyline points="20 6 9 17 4 12" />
-    </svg>
-  );
-}
+    <div className="px-4 md:px-8 lg:px-16"> {/* Adjust overall padding for different screen sizes */}
+      <div className="bg-gray-600 h-[250px] md:h-[450px] relative"> {/* Adjust height for mobile */}
+        <Image
+          src="https://www.dewr.gov.au/sites/default/files/styles/article_xl/public/images/2023-10/Newsroom%20Banner-%20BRII.png?itok=DPcpNk5P"
+          alt="image"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div className="bg-green-700 h-6"></div>
 
-// WrongIcon component
-function WrongIcon(props) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 48 48"
-      width="28"
-      height="24"
-      {...props}
-    >
-      <path
-        fill="#F44336"
-        d="M21.5 4.5H26.501V43.5H21.5z"
-        transform="rotate(45.001 24 24)"
-      />
-      <path
-        fill="#F44336"
-        d="M21.5 4.5H26.5V43.501H21.5z"
-        transform="rotate(135.008 24 24)"
-      />
-    </svg>
-  );
-}
+      <h1 className="text-center text-3xl md:text-5xl my-8"> {/* Adjust font size for mobile */}
+        Grant funding is now available for innovative startups and small to medium businesses
+      </h1>
 
-// FeatureCard component to display feature details
-function FeatureCard({ title, children}) {
-  return (
-    <div className="p-6 border rounded-lg shadow-md">
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-sm text-gray-600">{children}</p>
+      <div className="px-4 md:px-0"> {/* Adjust horizontal padding for mobile */}
+        <p className="bg-yellow-200 text-black text-lg md:text-xl py-4 md:py-6 text-center">
+          This story was first published on{' '}
+          <span className="font-bold text-gold-900">Friday 27 October 2023</span>. If you wish to use
+          this content, please contact{' '}
+          <span className="text-gold-900 underline">media@dewr.gov.au</span> to confirm that the
+          information is still current.
+        </p>
+
+        <h2 className="text-lg md:text-2xl text-gray-800 font-light my-8">
+          The Australian Government is looking for innovative solutions to improve the modern awards
+          user experience in the latest Business Research and Innovation Initiative (BRII) round
+        </h2>
+
+        <Image
+          src="https://www.dewr.gov.au/sites/default/files/styles/article_xl/public/images/2023-10/Newsroom%20Banner-%20BRII.png?itok=DPcpNk5P"
+          alt=""
+          width={990}
+          height={450}
+          className="mx-auto my-8" 
+        />
+
+        <p className="text-gray-700 text-lg md:text-xl font-light mb-8">
+          The BRII provides startups and small to medium enterprises with grant funding to develop
+          innovative solutions for government policy and service delivery challenges. In the latest
+          round of grants available, they are seeking innovative solutions to improve the modern
+          awards user experience.
+          <br />
+          Businesses can submit ideas that:
+        </p>
+
+        <ul className="list-disc ml-8 md:ml-12 mb-8">
+          <li className="text-lg md:text-xl">Make finding and applying for modern awards easier</li>
+          <li className="text-lg md:text-xl">Respond to modern award changes effectively</li>
+          <li className="text-lg md:text-xl">Curate modern award information for small business owners</li>
+        </ul>
+
+        <p className="font-light text-lg md:text-xl mb-8">
+          Innovative ideas could include natural language processing, chatbots, machine learning, etc.
+        </p>
+
+        <p className="font-light text-lg md:text-xl mb-8">
+          For more information on the Business Research and Innovation Initiative and how to apply,
+          visit the BRII Workplace Relations{' '}
+          <Link href="https://business.gov.au/grants-and-programs/brii-workplace-relations-usability-challenge">
+            Usability Challenge Feasibility grant page
+          </Link>{' '}
+          on the Business.gov.au website.
+        </p>
+
+        <p className="text-lg md:text-xl mb-8">Field Enter:</p>
+
+        <Link href="https://www.dewr.gov.au/newsroom?category=nc9261" className="bg-gray-100 underline text-blue-700 text-lg md:text-xl p-3 block mb-8">
+          Business and Industry
+        </Link>
+
+        <div className="bg-gray-800 rounded-lg p-4 md:p-8 mb-8">
+          <p className="font-bold text-white text-lg mb-4">Media Enquiry</p>
+          <p className="font-bold text-white text-lg mb-4">Call 02 6240 4957</p>
+          <p className="font-bold text-white text-sm">Mail media@dewr.gov.au</p>
+          <p className="font-bold text-white text-lg mt-4">Newsroom enquiries</p>
+          <p className="font-bold text-white text-sm">communication@dewr.gov.au</p>
+        </div>
+
+        <div className="h-2 bg-black mb-8"></div>
+
+        <p className="text-md mb-8">Correct at time of publication.</p>
+      </div>
     </div>
   );
 }
-function page() {
-  return (
-    <div>
 
-{/* Landing */}
-<div className='w-full p-3 bg-gray-600'>
-  <h2 className='text-center p-3 text-white font-roboto text-xl'>We support people to have safe, secure and well-paid work with the skills for a sustainable future.</h2>
-</div>
-<div className='bg-green-700 w-full h-6'></div>
-
-<section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800" id="pricing">
-          <div className="container space-y-12 px-4 md:px-6">
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <Link href="/skills">
-              <Card className="cursor-pointer hover:drop-shadow-md md:drop-shadow-xl text-md ">
-                <CardHeader>
-                  <div className="space-y-2">
-                    <h3 className="text-2xl font-bold hover:border-[#54a8cd] transition-all duration-300">Skills and Training</h3>
-                    <p className=" font-extralight text-xl ">Includes initiatives to upskill and train you for the jobs of today and tomorrow through apprenticeships and training.
-                    </p>
-                  </div>
-                </CardHeader>
-                
-              </Card>
-              </Link>
-              <Link href="/employment">
-              <Card className="cursor-pointer hover:drop-shadow-md md:drop-shadow-xl ">
-                <CardHeader>
-                  <div className="space-y-2 p-4">
-                    <h3 className="text-2xl font-bold">Employment</h3>
-                    <p className=" font-extralight text-xl ">Includes services and support to help overcome barriers and develop the required skills to gain employment.
-                    </p>
-                  </div>
-                </CardHeader>
-               
-              </Card>
-              </Link>
-              <Link href="/workplace">
-              <Card className="cursor-pointer hover:drop-shadow-md md:drop-shadow-xl ">
-                <CardHeader>
-                  <div className="space-y-2">
-                  <h3 className="text-2xl font-bold hover:border-[#54a8cd] transition-all duration-300">Workplace relations</h3>
-                   <p className="font-extralight text-[18px]">Includes initiatives to upskill and train you for the jobs of today and tomorrow through apprenticeships and training.</p>
-                  </div>
-                  <div class=" text-black mt-6  py-2 px-4 rounded flex">Closing Loopholes
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M5 12h14M12 5l7 7-7 7"/>
-</svg>
-</div>
-                </CardHeader>
-                
-              </Card>
-              </Link>
-              
-              
-
-            </div>
-          </div>
-        </section>
-        <h1 className='text-3xl text-center bg-gray-100 text-green-700 font-bold'>Featured</h1>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-          
-          <div className="container space-y-12 px-4 md:px-6">
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <Card className="cursor-pointer hover:drop-shadow-md md:drop-shadow-xl ">
-                <CardHeader>
-                  <div className="space-y-2">
-                    <Image
-                    src="https://www.dewr.gov.au/sites/default/files/styles/card_xl/public/images/2023-09/Tile%20%E2%80%93%20Closing%20Loopholes.png?itok=4XdI4tHa"
-                    width={720}
-                    height={457}
-                    />
-                    <p className=" font-extralight text-xl ">Changes to workplace relations laws arising from the Closing Loopholes and Closing Loopholes No. 2 Acts
-                    </p>
-                  </div>
-                  <div class=" text-black mt-6  py-2 px-4 rounded flex">Closing Loopholes
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M5 12h14M12 5l7 7-7 7"/>
-</svg>
-</div>
-                </CardHeader>
-                
-              </Card>
-
-              <Card className="cursor-pointer hover:drop-shadow-md md:drop-shadow-xl ">
-                <CardHeader>
-                  <div className="space-y-2">
-
-<Image
-src="https://www.dewr.gov.au/sites/default/files/styles/card_xl/public/images/2023-07/Feature-tile-%E2%80%93-Consultation-%E2%80%93-A-new-voluntary-parent-support-service.jpg?itok=mcOkhgBw"
-width={720}
-height={457}
-/>
-                    <p className=" font-extralight text-[18px] ">A new voluntary parent support service
-                    </p>
-                    <div class=" text-black mt-6  py-2 px-4 rounded flex">New Service
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M5 12h14M12 5l7 7-7 7"/>
-</svg>
-</div>
-
-                  </div>
-                </CardHeader>
-              
-              </Card>
-
-              <Card className="cursor-pointer hover:drop-shadow-md md:drop-shadow-xl ">
-                <CardHeader>
-                  <div className="space-y-2">
-                    <Image 
-                    src="https://www.dewr.gov.au/sites/default/files/styles/card_xl/public/images/2023-08/Featured%20Tile%20%E2%80%93%20DEWR%20Consultation%20Hub.png?itok=JMrixF1Q"
-                    width={720}
-                    height={457} 
-                    />
-                    <p className="text-[18px] font-extralight">Visit the DEWR Consultation Hub to view open and closed consultations
-                    </p>
-                    <div class=" text-black mt-6 py-2 px-4 rounded flex">Consultation
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M5 12h14M12 5l7 7-7 7"/>
-</svg>
-</div>
-                  </div>
-                </CardHeader>
-               
-              </Card>
-
-              
-              
-
-            </div>
-
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <Card className="cursor-pointer  hover:drop-shadow-md md:drop-shadow-xl ">
-                <CardHeader>
-                  <div className="space-y-2">
-                    <Image
-                    src="https://www.dewr.gov.au/sites/default/files/styles/card_xl/public/images/2022-02/1401%20Workforce%20Australia%20Web%20Tile_02_AW.jpg?itok=hdFYCwWh"
-                    width={800}
-                    height={457}
-                    />
-                    <p className=" font-extralight text-xl ">Visit Workforce Australia to search and apply for jobs
-                    </p>
-                  </div>
-                  <div class=" text-black mt-6 font py-2 px-4 rounded flex uppercase">Workforce Australia
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M5 12h14M12 5l7 7-7 7"/>
-</svg>
-</div>
-                </CardHeader>
-                
-              </Card>
-
-              <Card className="cursor-pointer hover:drop-shadow-md md:drop-shadow-xl ">
-                <CardHeader>
-                  <div className="space-y-2">
-
-<Image
-src="https://www.dewr.gov.au/sites/default/files/styles/card_xl/public/images/2023-06/2554%20Your%20Career%20tile%20Internet_AW.png?itok=c9h8pEJ2"
-width={720}
-height={457}
-/>
-                    <p className=" font-extralight text-[18px] ">Visit Your Career for clear and simple careers information
-                    </p>
-                    <div class=" text-black mt-6 font-bold py-2 px-4 rounded flex  uppercase">Your Career
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M5 12h14M12 5l7 7-7 7"/>
-</svg>
-</div>
-
-                  </div>
-                </CardHeader>
-                
-              </Card>
-
-<Link href="https://www.dewr.gov.au/jobs-and-skills-australia/jobs-and-skills-australia-ministerial-advisory-board">
-              <Card className="cursor-pointer hover:drop-shadow-md md:drop-shadow-xl ">
-                <CardHeader>
-                  <div className="space-y-2">
-                    <Image 
-                    src="https://www.dewr.gov.au/sites/default/files/styles/card_xl/public/images/2023-03/Feature%20tile%20%E2%80%93%20Jobs%20and%20Skills%20Australia.jpg?itok=bbarNbJh"
-                    width={720}
-                    height={457} 
-                    />
-                    <p className="text-[18px] font-extralight">Jobs and Skills Australia Ministerial Advisory Board announced
-                    </p>
-
-                    <div class=" text-black mt-6 font-bold py-2 px-4 rounded flex uppercase">Jobs and Career Australia
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M5 12h14M12 5l7 7-7 7"/>
-</svg>
-</div>
-                  </div>
-                </CardHeader>
-               
-              </Card>
-
-              
-              </Link>
-
-            </div>
-          </div>
-        </section>
-    </div>
-  )
-}
-
-export default page
+export default Page;
