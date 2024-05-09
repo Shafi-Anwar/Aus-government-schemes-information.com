@@ -21,8 +21,8 @@ function Page() {
 
       <div className="px-4 md:px-0"> {/* Adjust horizontal padding for mobile */}
         <p className="bg-yellow-200 text-black text-lg md:text-xl py-4 md:py-6 text-center">
-          To apply for grant, please click here,
-          <span className="text-gold-900 underline">my.gov.au</span> 
+          To apply for grant, please click here
+          <Link className="text-gold-900 underline" href="my.gov.au"> my.gov.au</Link> 
 
         </p>
 
